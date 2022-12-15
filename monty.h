@@ -83,6 +83,6 @@ void err(int error_code, ...);
 void more_err(int error_code, ...);
 void string_err(int error_code, ...);
 void rotr(stack_t **, unsigned int);
-ssize_t getstdin(char **lineptr, int file);
+ssize_t getline(char **pstring, size_t *size, FILE *stream);
 
 #endif /*__MONTY__H*/
