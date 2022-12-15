@@ -7,7 +7,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdarg.h>
-
+#include <fcntl.h>
+#include <sys/types.h>
 
 
 /**
@@ -82,6 +83,6 @@ void err(int error_code, ...);
 void more_err(int error_code, ...);
 void string_err(int error_code, ...);
 void rotr(stack_t **, unsigned int);
-
+ssize_t getstdin(char **lineptr, int file);
 
 #endif /*__MONTY__H*/
